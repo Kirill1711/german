@@ -1,0 +1,151 @@
+.buy__course {
+    width: 100%;
+    height: 100%;
+    background-color: #e82424;
+}
+.buy__course h2 {
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    padding: 1.5em;
+    text-shadow: 5px 5px 5px #000000;
+    font-family: 'Myriad Pro Regular';
+}
+
+.course__wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5em 0;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.course__title {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 1em;
+}
+.course__title h3 {
+    font-size: 30px;
+    color: #000000;
+    font-family: 'Myriad Pro Bold';
+}
+.red{
+    color: #eb1010 !important;
+    text-transform: uppercase;
+}
+.course__title p {
+    font-size: 28px;
+    color: #000000;
+    font-family: 'Myriad Pro Bold';   
+}
+
+.course__wrapper img {
+    order: 2;
+    width: 260px;
+    height: 260px;
+    box-shadow: 5px 5px 10px #000000;
+}
+.course__wrapper img:hover{
+    animation: move 1.5s ease;
+}
+
+.course__text {
+    order: 3;
+    font-size: 24px;
+    color: #000000;
+    font-family: 'Myriad Pro Regular';
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 2em;
+}
+
+.course__inner {
+    margin-left: 5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 1.5em;
+    flex-wrap: wrap;
+}
+.course__inner p {
+    font-family: 'Myriad Pro Bold';
+    font-size: 28px;
+    color: #e82424;
+    margin-right: 10px;
+}
+.course__inner img {
+    width: 50px;
+    height: 50px;
+    margin-right: 2em;
+}
+.course__inner button {
+    cursor: pointer;
+    width: 220px;
+    height: 50px;
+    background-color: #000000;
+    color: #e82424;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #000000;
+    transition: all 0.4s;
+}
+
+.course__inner button:hover {
+    transform: translate(0,-3px);
+    box-shadow: 0 20px 40px 0 #000000;
+}
+
+@media screen and (max-width: 1200px) {
+    .buy__course h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .course__title h3 {
+        font-size: 24px;
+    }
+    .course__title p {
+        font-size: 22px;
+    }
+    .course__text {
+        font-size: 20px;
+    }
+    .course__inner {
+        width: 250px;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .course__inner button {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .buy__course h2 {
+        padding: 1em;
+    }
+    .course__wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+    .course__wrapper img {
+        order: 1;
+    }
+    .course__title {
+        width: 260px;
+        order: 2;
+    }
+    .course__text {
+        order: 3;
+        width: 260px;
+    }
+    .course__inner {
+        margin: 0 auto;
+    }
+}

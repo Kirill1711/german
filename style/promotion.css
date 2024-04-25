@@ -1,0 +1,147 @@
+.promotion {
+    width: 100%;
+    height: 100%;
+    background-color: #e82424;
+}
+
+.promotion h2 {
+    padding: 2em 0;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 2px 1px 1px #000000;
+    font-family: 'Myriad Pro Regular';
+}
+
+.promotion h2 span {
+    color: #e82424;
+}
+
+.promotion__container {
+    padding: 1em 0;
+    width: 1100px;
+    height: 380px;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: 3px dashed #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.promotion__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+.promotion__container span {
+    font-size: 28px;
+    color: #000000;
+    font-family: 'Myriad Pro Bold';
+}
+.promotion__item img {
+    width: 260px;
+    height: 260px;
+    box-shadow: 5px 5px 5px 0 #000000;
+}
+
+.left {
+    transform: rotate(10deg);
+}
+.right {
+    transform: rotate(-10deg);
+}
+
+
+
+
+.promotion__item div {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.promotion__item div p {
+    font-size: 28px;
+    color: #000000;
+    font-family: 'Myriad Pro Bold';
+}
+.promotion__item div img {
+    width: 50px;
+    height: 50px;
+    box-shadow: none;
+    margin-left: 1em;
+}
+
+.promotion__price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 1em;
+}
+.promotion__price div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #000000;
+    font-size: 28px;
+    font-family: 'Myriad Pro Bold';
+}
+.promotion__price div img {
+    width: 50px;
+    height: 50px;
+}
+.promotion__price div span {
+    text-decoration: line-through;
+}
+.promotion__price button {
+    cursor: pointer;
+    width: 220px;
+    height: 50px;
+    background-color: #000000;
+    color: #e82424;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #000000;
+    transition: all 0.4s;
+}
+.promotion__price button:hover {
+    transform: translate(0,-3px);
+    box-shadow: 0 20px 40px 0 #000000;
+}
+
+@media screen and (max-width: 1200px) {
+    .promotion__container h2 {
+        font-size: 24px;
+    }
+    .promotion__container {
+        width: 900px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .promotion__container {
+        width: 700px;
+        padding: 0;
+    }
+    .promotion__item img {
+        width: 200px;
+        height: 200px;
+    }
+    .promotion__price button {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .promotion__container{
+        padding: 1em 0;
+        width: 300px;
+        height: 100%;
+        flex-direction: column;
+    }
+}
