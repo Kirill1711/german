@@ -1,0 +1,72 @@
+header {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    background-image: url('../img/oferta/german.png');
+    background-position: right;
+    background-repeat: repeat-y;
+}
+
+.menu {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 40px;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    font-family: 'Myriad Pro Regular';
+}
+.menu a:hover {
+    border-bottom: 2px solid #000000;
+}
+.oferta_container {
+    background-color: #faf0e6;
+}
+.oferta {
+    height: 100%;
+    width: 100%;
+    background-color: #fefefe;
+    background-image: url('../img/oferta/german.png');
+    background-position: right;
+    background-repeat: repeat-y;
+}
+
+.oferta_container h2 {
+    color: #000000;
+    font-family: 'Myriad Pro Bold';
+    font-size: 1.5em; 
+    text-align: center;
+    padding-top: 2em;
+}
+
+.oferta_container h3 {
+    color: #000000;
+    font-family: 'Myriad Pro Bold';
+    font-size: 1em; 
+    text-align: center;
+    padding-top: 2em;
+}
+.oferta_container span {
+    padding-top: 1em;
+    color: #000000;
+    text-align: center;
+    font-family: 'Myriad Pro Semibold';
+    display: block;
+    line-height: 1.2;
+    font-size: 1em;
+}
+.oferta_container p {
+    padding-top: 0.5em;
+    color: #000000;
+    text-align: justify;
+    font-family: 'Myriad Pro Regular';
+    line-height: 1.1;
+    font-size: 1em;
+}
