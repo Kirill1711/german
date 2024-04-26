@@ -63,7 +63,7 @@ header {
     font-size: 1em;
 }
 .oferta_container p {
-    padding-top: 0.5em;
+    padding: 0.5em 0.5em;
     color: #000000;
     text-align: justify;
     font-family: 'Myriad Pro Regular';
